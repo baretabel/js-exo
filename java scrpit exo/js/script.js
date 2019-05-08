@@ -30,207 +30,58 @@ function name(params) {
 
 }
 
-/*function five() {
-    var reponse = prompt('Bonjour, quel age as tu?');
-    if (reponse < 18) {
-        alert('Tu es mineur');
-        reponse = prompt('Tu es une fille ou un garçon?');
-        if (reponse == 'fille') {
-            reponse = prompt('Quel taille faite vous mademoiselle?');
-            if (reponse < 1.70) {
-                reponse = prompt('La schtrompfette quel est ton poids?');
-                if (reponse < 60);
-                {
-                    alert('Faut penser a un régime, régine');
-                    reponse = prompt('Je suis sympa?');
-                    if (reponse == 'oui') {
-                        alert('Merci');
-                    } else {
-                        alert('Désolé je n\'ai que oui dans mon dictionnaire')
-                    }
+function malade() {
+    function gorge() {
+        x = prompt('Avez vous de la fièvre?\n\rOui\n\rNon');
+        if (x == 'Oui') {
+            alert('Vous avez un Rhume.');
+        } else if (x == 'Non') {
+            alert('Vous avez un Mal de Gorge.');
+        } else {
+            gorge()
+        }
+    }
+    function aucune() {
 
-                }else if (reponse >= 60) {
-                    alert('Un conseil le Mc Do, tout de suite');
-                    reponse = prompt('Je suis sympa?');
-                    if (reponse == 'oui') {
-                        alert('Merci');
-                    } else {
-                        alert('Désolé je n\'ai que oui dans mon dictionnaire')
-                    }
-                }
+        x = prompt('Avez vous de la toux?\n\rOui\n\rNon');
+        if (x == 'Oui') {
+            fievre();
+        } else if (x == 'Non') {
+            alert('Vous n\'avez rien.');
+        } else {
+            aucune()
+        }
+    }
+    function fievre() {
+        x = prompt('Avez vous de la fièvre?\n\rOui\n\rNon');
+        if (x == 'Oui') {
+            alert('Vous avez un Rhume.');
+        } else if (x == 'Non') {
+            alert('Vous avez un Refroidissement.');
+        } else {
+            fievre()
 
-            } else if (reponse >= 1.70) {
-                reponse = prompt('La dame de fer quel est ton poids?');
-                if (reponse < 70); {
-                    alert('Faut penser a un régime, régine');
-                    reponse = prompt('Je suis sympa?');
-                    if (reponse == 'oui') {
-                        alert('Merci');
-                    } else {
-                        alert('Désolé je n\'ai que oui dans mon dictionnaire')
-                    }
-
-                }else if (reponse >= 70) {
-                    alert('Un conseil le Mc Do, tout de suite');
-                    reponse = prompt('Je suis sympa?');
-                    if (reponse == 'oui') {
-                        alert('Merci');
-                    } else {
-                        alert('Désolé je n\'ai que oui dans mon dictionnaire')
-                    }
-                }
-            } else if (reponse == 'garçon') {
-                reponse = prompt('Quel taille faite vous jeune homme?');
-                if (reponse < 1.70) {
-                    reponse = prompt('Minimoy quel est ton poids?');
-                    if (reponse < 60);
-                    {
-                        alert('Faut arreté le chocolat buu.');
-                        reponse = prompt('Je suis sympa?');
-                        if (reponse == 'oui') {
-                            alert('Merci');
-                        } else {
-                            alert('Désolé je n\'ai que oui dans mon dictionnaire')
-                        }
-
-                    }else if (reponse >= 60) {
-                        alert('Un conseil le Mc Do, tout de suite');
-                        reponse = prompt('Je suis sympa?');
-                        if (reponse == 'oui') {
-                            alert('Merci');
-                        } else {
-                            alert('Désolé je n\'ai que oui dans mon dictionnaire')
-                        }
-                    }
-                }
-                else if (reponse >= 1.70) {
-                    reponse = prompt('Averel quel est ton poids?');
-                } if (reponse < 70);
-                {
-                    alert('Faut arreté le chocolat buu.');
-                    reponse = prompt('Je suis sympa?');
-                    if (reponse == 'oui') {
-                        alert('Merci');
-                    } else {
-                        alert('Désolé je n\'ai que oui dans mon dictionnaire')
-                    }
-
-                }else if (reponse >= 70) {
-                    alert('Un conseil le Mc Do, tout de suite');
-                    reponse = prompt('Je suis sympa?');
-                    if (reponse == 'oui') {
-                        alert('Merci');
-                    } else {
-                        alert('Désolé je n\'ai que oui dans mon dictionnaire')
-                    }
-                }
-
-            }
-        } else if (reponse >= 18) {
-            alert('Tu es majeur');
-            reponse = prompt('Tu es une femme ou un Homme?');
-            if (reponse == 'femme') {
-                reponse = prompt('Quel taille faite vous Madame?');
-                if (reponse < 1.70) {
-                    reponse = prompt('Minimoi quel est ton poids?');
-                    if (reponse < 90);
-                    {
-                        alert('L\'obésité est proche');
-                        reponse = prompt('Je suis sympa?');
-                        if (reponse == 'oui') {
-                            alert('Merci');
-                        } else {
-                            alert('Désolé je n\'ai que oui dans mon dictionnaire')
-                        }
-
-                    }else if (reponse >= 90) {
-                        alert('Vive l\'anorexie');
-                        reponse = prompt('Je suis sympa?');
-                        if (reponse == 'oui') {
-                            alert('Merci');
-                        } else {
-                            alert('Désolé je n\'ai que oui dans mon dictionnaire')
-                        }
-                    }
-
-                } else if (reponse >= 1.70) {
-                    reponse = prompt('La dame de fer quel est ton poids?');
-                } if (reponse < 70);
-                {
-                    alert('L\'obésité est proche');
-                    reponse = prompt('Je suis sympa?');
-                    if (reponse == 'oui') {
-                        alert('Merci');
-                    } else {
-                        alert('Désolé je n\'ai que oui dans mon dictionnaire')
-                    }
-
-                }else if (reponse >= 90) {
-                    alert('Vive l\'anorexie');
-                    reponse = prompt('Je suis sympa?');
-                    if (reponse == 'oui') {
-                        alert('Merci');
-                    } else {
-                        alert('Désolé je n\'ai que oui dans mon dictionnaire')
-                    }
-                }
-            } else if (reponse == 'homme') {
-                reponse = prompt('Quel taille faite vous Monsieur?');
-                if (reponse < 1.70) {
-                    reponse = prompt('Minimoy quel est ton poids?');
-                    if (reponse < 90);
-                    {
-
-                        alert('L\'obésité est proche');
-                        reponse = prompt('Je suis sympa?');
-                        if (reponse == 'oui') {
-                            alert('Merci');
-                        } else {
-                            alert('Désolé je n\'ai que oui dans mon dictionnaire')
-                        }
-
-                    }else if (reponse >= 90) {
-                        alert('Vive l\'anorexie');
-                        reponse = prompt('Je suis sympa?');
-                        if (reponse == 'oui') {
-                            alert('Merci');
-                        } else {
-                            alert('Désolé je n\'ai que oui dans mon dictionnaire')
-                        }
-                    }
-
-                    else if (reponse >= 1.70) {
-                        reponse = prompt('Slunder quel est ton poids?');
-                    } if (reponse < 70);
-                    {
-                        alert('L\'obésité est proche');
-                        reponse = prompt('Je suis sympa?');
-                        if (reponse == 'oui') {
-                            alert('Merci');
-                        } else {
-                            alert('Désolé je n\'ai que oui dans mon dictionnaire')
-                        }
-
-                    }else if (reponse >= 90) {
-                        alert('Vive l\'anorexie');
-                        reponse = prompt('Je suis sympa?');
-                        if (reponse == 'oui') {
-                            alert('Merci');
-                        } else {
-                            alert('Désolé je n\'ai que oui dans mon dictionnaire')
-                        }
-                    }
-
-
-                }*/
-
+        }
+    }
+    var x = prompt('Où avez vous mal?\n\rAbdomen\n\rGorge\n\rAucune');
+    if (x == 'Abdomen') {
+        alert('Vous avez l\'appendicite.');
+    } else if (x == 'Gorge') {
+        gorge()
+    } else if (x == 'Aucune') {
+        aucune()
+    } else {
+        malade()
+    }
+}
+        
 
 function estMultipleDeTrois(nombre) {
     return nombre % 3 === 0;
-  }
-  function estMultipleDeCinq(nombre) {
+}
+function estMultipleDeCinq(nombre) {
     return nombre % 5 === 0;
-  }
+}
 function boucle() {
     for (var i = 1; i < 200; i++) {
         if (i % 3 && i % 5) {
@@ -253,23 +104,23 @@ function boucle() {
     }
 }
 function devinette() {
-    var x = Math.round(Math.random()*100);
-    var a=10;
-    for ( var y = 0; y <10; y++){
+    var x = Math.round(Math.random() * 100);
+    var a = 10;
+    for (var y = 0; y < 10; y++) {
         var z = prompt("Entrez un nombre");
-        if( z == x){ 
+        if (z == x) {
             alert("Bravo!");
             break;
-        }else if (z<x){
-            alert("Plus Grand. \n\r Nbr d'essaie restant:"+ a);
-             a= a-1 ;
-        }else if(x<z){
-            alert("Plus petit.\n\r Nbr d'essaie restant:"+ a);
-             a= a-1 ;
+        } else if (z < x) {
+            alert("Plus Grand. \n\r Nbr d'essaie restant:" + a);
+            a = a - 1;
+        } else if (x < z) {
+            alert("Plus petit.\n\r Nbr d'essaie restant:" + a);
+            a = a - 1;
         }
-    }  
+    }
 }
-shifoumi();
+shifoumi1();
 function shifoumi() {
     var mishoufi = ['Pierre', 'Feuille', 'Ciseaux'];
     function nombreAleatoire(max) {
@@ -284,6 +135,7 @@ function shifoumi() {
     var y = 0;
     for (var a = 0; a != 1;) {
         var z = prompt('1.Pierre\n\r 2.Feuille\n\r 3.Ciseaux');
+
         if (z == 1) {
             z = mishoufi[0];
         } else if (z == 2) {
@@ -296,9 +148,11 @@ function shifoumi() {
         } else if (z != 1 && z != 2 && z != 3 && z != 42) {
             z = prompt('Réponse invalide, veuillez recommencé.\n\r \n\r \n\r \n\r1.Pierre\n\r 2.Feuille\n\r 3.Ciseaux');
         }
+
+
         var i = mishoufi[nombreAleatoire(2)];
         alert("L'odinateur choisie" + i);
-        if (z ==  i ) {
+        if (z == i) {
             alert('Egalité');
         } else if (z == mishoufi[0] && i == mishoufi[2]) {
             alert('Manche Gagnée');
@@ -309,18 +163,63 @@ function shifoumi() {
         } else if (z == mishoufi[2] && i == mishoufi[1]) {
             alert('Manche Gagnée');
             x = x + 1;
-        }else{
+        } else {
             alert('Manche Perdue');
-            y = y +1;
+            y = y + 1;
         }
-        if(x==3){
+        if (x == 3) {
             alert('Bravo! Partie Gagnée!')
             break;
         }
-        if(y==3){
+        if (y == 3) {
             alert(' Partie Perdu :\'\(')
             break;
         }
     }
 
 }
+function shifoumi1() {
+    var mishoufi = ['Pierre', 'Feuille', 'Ciseaux'];
+    function nombreAleatoire(max) {
+        return Math.round(Math.random() * max);
+    }
+
+
+    var x = 0;
+    var y = 0;
+    for (var a = 1; a != -1; a++) {
+        var z = prompt('1.Pierre\n\r 2.Feuille\n\r 3.Ciseaux');
+
+        if (z != 'Feuille' && z != 'Pierre' && z != 'Ciseaux' && z != 42) {
+            z = prompt('Réponse invalide, veuillez recommencé.\n\r \n\r \n\r \n\r1.Pierre\n\r 2.Feuille\n\r 3.Ciseaux');
+
+        } else if (z == 42) {
+            alert('Bravo! Tu connais la réponse de la vie, c\'est gagné');
+            break;
+        }
+
+
+        var i = mishoufi[nombreAleatoire(2)];
+        alert("L'odinateur choisie " + i);
+        if (z == i) {
+            alert('Egalité');
+        }else if (z == 'Pierre' && i == 'Ciseaux' || z == 'Feuille' && i == 'Pierre' || z == 'Ciseaux' && i == 'Feuille') {
+            alert('Manche Gagnée');
+            x = x + 1;
+        }else if (z == 'Pierre' && i == 'Feuille' || z == 'Feuille' && i == 'Ciseaux' || z == 'Ciseaux' && i == 'Pierre') {
+            alert('Manche Perdu');
+            y = y + 1;
+        }
+        if (x == 3) {
+            alert('Bravo! Partie Gagnée!')
+            break;
+        }
+        if (y == 3) {
+            alert(' Partie Perdu :\'\(')
+            break;
+        }
+        alert(" Manche "+a+"\n\r Score:\n\r Joueur "+x+"\n\r Ordinateur "+y)
+    }
+
+}
+
